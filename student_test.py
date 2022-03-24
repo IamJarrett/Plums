@@ -16,3 +16,7 @@ def describe_a_student():
     def that_has_a_default_major_of_undecided():
         carl = Student("Carl", "Carlson", "carl@example.com")
         assert carl.major == "undecided"
+
+    def that_can_have_a_specified_major():
+        carl = Student("Carl", "Carlson", "carl@example.com", "ISAT")
+        assert carl.major == "ISAT"
