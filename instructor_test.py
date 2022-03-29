@@ -15,3 +15,9 @@ def describe_an_instructor():
     def that_has_an_office():
         ernie = Instructor("Ernie", "Ernieson", "ernie@example.com", "King123")
         assert ernie.office == "King123"
+
+    def that_has_a_display_name():
+        francis = Instructor("Francis", "Franker", "frank@example.com", "King555")
+        francis.first_name == "frank"
+        assert francis.last_name == "Franker"
+        assert francis.email == "frank@example.com"
